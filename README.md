@@ -28,7 +28,7 @@ Every day, log your mood, reflect with a calming affirmation, and watch your per
 ## 💻 Tech Stack
 
 - **React + Vite**
-- **Tailwind CSS**
+- **CSS**
 - **Firebase Auth & Firestore**
 - **Custom Hooks & Components**
 
