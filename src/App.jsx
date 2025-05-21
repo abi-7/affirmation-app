@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Login from "./components/LogIn";
+import "./App.css";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -18,9 +19,9 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-green-50 text-green-800 p-6 text-center">
-      <h1 className="text-4xl font-bold mb-6">🌱 My Affirmation Garden</h1>
-      <p className="mb-4 text-lg">Hello, {user.displayName}!</p>
+    <div className="garden-container">
+      <h1 className="garden-title">🌱 My Affirmation Garden</h1>
+      <p className="garden-welcome">Hello, {user.displayName}!</p>
     </div>
   );
 }

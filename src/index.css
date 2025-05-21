@@ -1,3 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --background: #ccfde9;
+  --foreground: #ccfde9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ccfde9;
+    --foreground: #ccfde9;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  height: 100%;
+}
