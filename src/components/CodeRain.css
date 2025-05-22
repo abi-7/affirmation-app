@@ -1,0 +1,35 @@
+.code-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Use viewport width for better consistency */
+  height: 100vh; /* Use viewport height */
+  background: transparent;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.rain-char {
+  position: absolute;
+  top: -100%;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+    "Twemoji Mozilla", sans-serif;
+  font-size: 20px;
+  opacity: 0.1;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    top: -100%;
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0.1;
+  }
+}
