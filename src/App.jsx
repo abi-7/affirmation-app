@@ -8,7 +8,10 @@ function App() {
 
   if (!user) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-green-100 text-green-800">
+      <div
+        className="min-h-screen flex items-center 
+      justify-center bg-green-100 text-green-800"
+      >
         <Login
           onLogin={(user) => {
             console.log("Logged in user:", user);
@@ -18,7 +21,6 @@ function App() {
       </div>
     );
   }
-
   return (
     <div className="garden-container">
       <h1 className="garden-title">🌱 My Affirmation Garden</h1>

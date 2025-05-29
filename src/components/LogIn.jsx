@@ -1,5 +1,5 @@
-import React from "react";
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import React, { useEffect } from "react";
+import { signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import "./LogIn.css";
 import Card from "@mui/material/Card";
@@ -9,6 +9,11 @@ import Typography from "@mui/material/Typography";
 import CodeRain from "./CodeRain";
 
 const Login = ({ onLogin }) => {
+  useEffect(() => {
+    // Sign out user on mount so Firebase doesn't remember previous session
+    signOut(auth).catch(console.error);
+  }, []);
+
   const handleGoogleLogin = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
