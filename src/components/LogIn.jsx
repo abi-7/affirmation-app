@@ -10,7 +10,8 @@ import CodeRain from "./CodeRain";
 
 const Login = ({ onLogin }) => {
   useEffect(() => {
-    // Sign out user on mount so Firebase doesn't remember previous session
+    // Sign out user on mount so Firebase
+    // doesn't remember previous session
     signOut(auth).catch(console.error);
   }, []);
 
