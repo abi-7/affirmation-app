@@ -4,7 +4,7 @@ import MoodTrackerWidget from "./widgets/MoodTrackerWidget";
 export default function Dashboard({ user }) {
   return (
     <div
-      className="garden-container"
+      className="dashboard-container"
       style={{
         backgroundImage: 'url("src/assets/Cloudy.svg")',
         backgroundSize: "cover",
@@ -13,7 +13,7 @@ export default function Dashboard({ user }) {
       }}
     >
       <h1 className="garden-title">Welcome, {user.displayName}!</h1>
-      <div>
+      <div className="widgets-grid">
         <QuoteWidget />
         <MoodTrackerWidget />
       </div>
