@@ -3,7 +3,10 @@ const MoodTrackerWidget = ({ onMoodSelect }) => {
 
   return (
     <div className="widget">
-      <h2 className="text-xl font-semibold mb-4">How are you feeling today?</h2>
+      <h2 className="text-xl font-semibold mb-4">
+        {" "}
+        🤩 How are you feeling today?
+      </h2>
       <div className="flex justify-center gap-4">
         {moods.map((mood) => (
           <button

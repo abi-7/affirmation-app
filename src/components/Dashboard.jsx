@@ -1,5 +1,6 @@
 import QuoteWidget from "./widgets/QuoteWidget";
 import MoodTrackerWidget from "./widgets/MoodTrackerWidget";
+import WeatherWidget from "./widgets/WeatherWidget";
 
 export default function Dashboard({ user }) {
   return (
@@ -16,6 +17,7 @@ export default function Dashboard({ user }) {
       <div className="widgets-grid">
         <QuoteWidget />
         <MoodTrackerWidget />
+        <WeatherWidget />
       </div>
     </div>
   );
