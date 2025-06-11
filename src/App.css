@@ -45,7 +45,29 @@
 }
 
 .widget h2 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+}
+
+.next-btn {
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  color: black;
+  padding: 8px 16px;
+  margin-left: 8px;
+}
+.next-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.prev-btn {
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  color: black;
+  padding: 8px 16px;
+  margin-right: 8px;
+}
+.prev-btn:hover {
+  background-color: #e0e0e0;
 }

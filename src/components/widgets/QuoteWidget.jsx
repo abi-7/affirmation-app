@@ -33,8 +33,12 @@ export default function QuoteWidget() {
       )}
       {currentQuote && <h3>{currentQuote.author}</h3>}
       <div className="button-container">
-        <button onClick={handlePreviousClick}>Previous</button>
-        <button onClick={handleNextClick}>Next</button>
+        <button onClick={handlePreviousClick} className="prev-btn">
+          &#8249;
+        </button>
+        <button onClick={handleNextClick} className="next-btn">
+          &#8250;
+        </button>
       </div>
     </div>
   );
