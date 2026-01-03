@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap");
+
+.savate-text {
+  font-family: "Savate", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* or 700, 300, etc. depending on your font selection */
+  font-style: normal;
+}
+
 .garden-container {
   min-height: 100vh;
   color: #065f46;
@@ -36,12 +45,19 @@
 
 /* Widget box */
 .widget {
-  background-color: white;
-  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 1.25rem;
   padding: 1rem 1.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* updated shadow */
+  backdrop-filter: blur(10px); /* glass effect */
   align-content: center;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.widget:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .widget h2 {

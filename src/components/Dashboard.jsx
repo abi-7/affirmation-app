@@ -13,11 +13,17 @@ export default function Dashboard({ user }) {
         backgroundPosition: "center",
       }}
     >
-      <h1 className="garden-title">Welcome, {user.displayName}!</h1>
+      <div className="garden-header">
+        <h1 className="garden-title">Welcome, {user.displayName}!</h1>
+        <h2 className="garden-date">{new Date().toLocaleDateString()}</h2>
+      </div>
       <div className="widgets-grid">
         <QuoteWidget />
-        <MoodTrackerWidget />
+        <MoodChartWidget />
         <WeatherWidget />
+      </div>
+      <div className="mood-grid">
+        <MoodChartWidget />
       </div>
     </div>
   );
